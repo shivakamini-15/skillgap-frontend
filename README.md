@@ -27,3 +27,12 @@ npm run build
 
 The demo student account is `demo.student@skillgap.com` with password
 `Student@123`, provided the backend has seeded it in the connected database.
+
+## Deploy on Render
+
+Create a Render Blueprint from this repository or a Static Site using this
+directory as its root. The included `render.yaml` builds and publishes `dist`
+and rewrites application routes to `index.html`. Set `VITE_API_URL` to the
+deployed backend URL including `/api` (for example,
+`https://your-backend.onrender.com/api`) and redeploy the site after changing
+it.
