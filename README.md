@@ -30,9 +30,9 @@ The demo student account is `demo.student@skillgap.com` with password
 
 ## Deploy on Render
 
-Create a Render Blueprint from this repository or a Static Site using this
-directory as its root. The included `render.yaml` builds and publishes `dist`
-and rewrites application routes to `index.html`. Set `VITE_API_URL` to the
+Create a Render Blueprint from this repository or a Docker web service using
+this directory as its root. The included `Dockerfile` builds the Vite app and
+serves it with Nginx, including SPA route fallback. Set `VITE_API_URL` to the
 deployed backend URL including `/api` (for example,
-`https://your-backend.onrender.com/api`) and redeploy the site after changing
-it.
+`https://your-backend.onrender.com/api`) before deploying or redeploying the
+site; Render supplies it to the Docker build.
